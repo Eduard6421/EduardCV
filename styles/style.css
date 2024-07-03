@@ -1,0 +1,244 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e0e7ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #1a202c;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #4a5568;
+}
+
+header a {
+    color: #2b6cb0;
+    text-decoration: none;
+    border-bottom: 1px dotted #2b6cb0;
+    padding-bottom: 2px;
+}
+
+header a:hover {
+    color: #2c5282;
+    border-bottom: 1px solid #2c5282;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #2c5282;
+    font-size: 1.8em;
+}
+
+.degree, .job, .publication, .award, .certification, .project, .skill {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #2b6cb0;
+    background: #f7fafc;
+    border-radius: 5px;
+}
+
+.degree h3, .job h3, .publication h3, .award h3, .certification h3, .project h3, .skill h3 {
+    font-size: 1.4em;
+    color: #1a202c;
+    margin: 0;
+}
+
+.degree p, .job p, .publication p, .award p, .certification p, .project p, .skill p {
+    margin: 5px 0;
+    color: #4a5568;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header, section {
+        text-align: center;
+    }
+
+    .degree h3, .job h3, .publication h3, .award h3, .certification h3, .project h3, .skill h3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .degree p, .job p, .publication p, .award p, .certification p, .project p, .skill p {
+        display: block;
+        text-align: left;
+    }
+
+    .degree span, .job span, .publication span, .award span, .certification span, .project span, .skill span {
+        margin-top: 5px;
+        font-size: 1em;
+        color: #4a5568;
+    }
+}
+
+section#publications h2,
+section#work-experience h2,
+section#education h2,
+section#awards-certifications h2,
+section#projects h2,
+section#skills h2 {
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #2c5282;
+    font-size: 1.8em;
+}
+
+.publication,
+.job,
+.degree,
+.awards-certifications,
+.projects,
+.skills {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #2b6cb0;
+    background: #f7fafc;
+    border-radius: 5px;
+}
+
+.publication .title,
+.job .title,
+.degree .title,
+.awards-certifications .title,
+.project .title {
+    font-size: 1.2em;
+    color: #1a202c;
+    font-weight: bold;
+}
+
+.publication .authors,
+.publication .date,
+.job .period,
+.degree .period,
+.degree .university,
+.degree .faculty,
+.degree .supervisor,
+.skills p {
+    font-size: 1em;
+    color: #4a5568;
+    margin-top: 5px;
+    display: block;
+}
+
+.publication .date,
+.job .description,
+.degree .description,
+.project .description,
+.skills h3 + p,
+.skills p + p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #718096;
+}
+
+.publication a {
+    color: #2b6cb0;
+    text-decoration: none;
+    border-bottom: 1px dotted #2b6cb0;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.publication a:hover {
+    color: #2c5282;
+    border-bottom: 1px solid #2c5282;
+}
+
+.awards-certifications .awards h3,
+.awards-certifications .certifications h3,
+.skills h3 {
+    font-size: 1.4em;
+    color: #1a202c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+
+section#work-experience {
+    margin-bottom: 30px;
+}
+
+section#work-experience h2 {
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #2c5282;
+    font-size: 1.8em;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #2b6cb0;
+    background: #f7fafc;
+    border-radius: 5px;
+}
+
+.job .role {
+    font-size: 1.2em;
+    color: #1a202c;
+    font-weight: bold;
+}
+
+.job .company {
+    font-size: 1em;
+    color: #4a5568;
+    margin-top: 5px;
+    display: block;
+}
+
+.job .period {
+    font-size: 1em;
+    color: #4a5568;
+    margin-top: 5px;
+    display: block;
+}
+
+.job .description {
+    font-size: 0.9em;
+    color: #718096;
+    margin-top: 10px;
+}
